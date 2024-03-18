@@ -1,0 +1,958 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dark-pink: #ff5d5d;
+    --x-light-pink: #faf1ed;
+    --dark-grey: #333333;
+    --grey: #545454;
+    --light-grey: #e0e0e0;
+    --x-light-grey: #f2f2f2;
+    --medium-green: #35e1a1;
+    --dark-green: #04aa6c;
+}
+
+/*------ALL-----*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1135px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    background: var(--white);
+}
+
+/*-----HEADER-----*/
+
+header {
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/*---- HEADER NAV----*/
+
+.nav-logo img {
+    height: 40px;
+    font-family: "TS-Reg", sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav span {
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+header nav li {
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    padding: 8px;
+    transition: .3s ease-in-out;
+    font-family: "TS-Med", sans-serif;
+}
+
+header nav li:hover {
+    background: var(--light-grey);
+    border-radius: 20px;
+}
+
+.btn {
+    font-family: "TS-Reg", sans-serif;
+    font-size: 16px;
+    padding: 12px 14px;
+    border-radius: 30px;
+    color: var(--white);
+    background: var(--black);
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background: var(--dark-grey);
+    color: var(--light-grey);
+}
+
+header span:nth-child(1) {
+    display: none;
+}
+
+header ul span:nth-child(5) {
+    display: none;
+}
+
+/*------MAIN----*/
+main {
+    padding-top: 25px;
+    border-top: 1px solid var(--light-grey);
+}
+
+/*-----SECTION 1----*/
+
+.text h1 {
+    font-size: 55px;
+    color: var(--black);
+    font-family: "TS-Med", sans-serif;
+}
+
+.text span {
+    color: red;
+}
+
+.text p {
+    color: var(--dark-grey);
+    padding-top: 10px;
+    font-family: "TS-Reg", sans-serif;
+}
+
+.text a {
+    text-decoration: underline;
+    color: var(--dark-grey);
+    font-family: "TS-Reg", sans-serif;
+}
+
+/* -----SECTION 1 NAVIGATION----*/
+
+.nav-bar {
+    margin: 30px 0;
+}
+
+.nav-bar ul {
+    display: flex;
+    height: 65px;
+    width: 100%;
+    gap: 10px;
+}
+
+.nav-bar ul li {
+    font-family: "TS-Med", sans-serif;
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.nav-bar ul li:hover {
+    background: black;
+    color: white;
+}
+
+.nav-bar ul li i {
+    padding-right: 12px;
+}
+
+.nav-bar span {
+    font-size: 15px;
+}
+
+/*----SECTION 2----*/
+
+/*----BLOC PHOTO GRID-----*/
+
+.section-2 {
+    max-width: 1135px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bloc-pics {
+    display: grid;
+    grid-template-columns: 56% 44%;
+    grid-gap: 3px;
+    height: 430px;
+}
+
+.pic-left {
+    background-image: url("../IMG/gettyimages-1217021310-612x612.jpg");
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.pic-right {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-gap: 3px;
+    height: 427px;
+}
+
+.small-photo {
+    background-image: url("../IMG/gettyimages-1031042204-612x612.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.small-photo:nth-child(2) {
+    background-image: url("../IMG/istockphoto-875150736-612x612.jpg");
+
+}
+
+/*-----BOUTTON TOUTES LES PHOTOS---*/
+
+.icon {
+    position: absolute;
+    font-family: "TS-Med", sans-serif;
+    bottom: 16px;
+    left: 16px;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 30px;
+    border: 1px solid black;
+    color: var(--white);
+    background: black;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.icon:hover {
+    background: white;
+    color: black;
+}
+
+.pic-left span {
+    padding-left: 5px;
+}
+
+/*---NAV LISTE-----SOUS LES PHOTOS*/
+
+.left-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.list {
+    display: flex;
+}
+
+.left-list i {
+    padding-left: 8px;
+    font-size: 13px;
+}
+
+.left-list span {
+    font-size: 14px;
+    font-family: "TS-Reg", sans-serif;
+
+}
+
+/*----SECTION 3----*/
+
+/*----BLOC 2 PARTIE---*/
+
+.section-3 {
+    height: 470px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    /*border: 1px solid red;*/
+}
+
+/*---TEXT LEFT LA VILLE AU DIAMAND...----*/
+
+/*----BLOC POUR CENTRER LE TEXTE DE GAUCHE---*/
+
+.centre-left {
+    /*border: 1px solid rgb(0, 255, 94);*/
+    margin-right: 70px;
+}
+
+/*----BLOC DE GAUCHE-----*/
+
+/*.left-side {
+    border: 1px solid yellow;
+}*/
+
+.left-side h2 {
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-family: "TS-Med", sans-serif;
+}
+
+.left-side p {
+    font-family: "TS-Reg", sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+/*-----BLOC DE DROITE-----*/
+
+.right-side {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    /* border: 1px solid blue;*/
+}
+
+.text-right {
+    text-align: left;
+}
+
+/*-----BLOC POUR CENTRER LE TEXTE DE DROITE---*/
+
+.centre-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff5d5d;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text-right h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-family: "TS-Med", sans-serif;
+}
+
+.text-right p {
+    font-family: "TS-Reg", sans-serif;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.text-right button {
+    font-family: "TS-Med", sans-serif;
+    background: black;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.text-right button:hover {
+    background: white;
+    color: black;
+}
+
+.map-photo {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*-----SECTION 4----*/
+
+/*-----TITRE H3-----*/
+
+.section-4 h3 {
+    font-size: 30px;
+    font-family: "TS-Med", sans-serif;
+    margin-bottom: 30px;
+}
+
+/*----BLOC CARROUSEL---*/
+
+.carrousel {
+    /*pborder: 2px solid blue;*/
+    display: flex;
+}
+
+/*---BLOC: SE DIVERTIR/SE RESTAURER----*/
+
+.carrousel-text {
+    flex: 1;
+}
+
+.carrousel-text h4 {
+    font-size: 25px;
+    font-family: "TS-Med", sans-serif;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.carrousel-text p {
+    font-family: "TS-Reg", sans-serif;
+    padding-bottom: 25px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.carrousel-text a {
+    text-decoration: underline;
+    font-family: "TS-Reg", sans-serif;
+    font-size: 17px;
+}
+
+/*----Bloc: PHOTOS & TEXT----*/
+
+.carrousel-photo {
+    flex: 3;
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+}
+
+.carrousel-photo>div {
+    width: calc((100% - 30px) / 3);
+    flex-shrink: 0;
+    position: relative;
+    /*---pour icon heart i---*/
+}
+
+.carrousel-photo>div img {
+    width: 100%;
+}
+
+/*---TEXT CARROUSEL---*/
+
+.text-car h5 {
+    padding: 10px 0;
+    font-size: 18px;
+    font-family: "TS-Med", sans-serif;
+}
+
+.text-car p {
+    padding-top: 10px;
+    line-height: 20px;
+    font-family: "TS-Reg", sans-serif;
+}
+
+.text-car i {
+    background: green;
+    border-radius: 20px;
+}
+
+.text-car span {
+    padding-left: 15px;
+}
+
+/*----icon heart----*/
+
+.heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.heart i {
+    font-size: 20px;
+}
+
+/*----icon award----*/
+
+/*.price {
+    width: 15%;
+    position: absolute;
+    bottom: 110px;
+    margin-left: 10px;
+}*/
+
+/*------SECTION 5----- MEME STYLE QUE SECTION SAUF H3*/
+
+.section-5 {
+    margin-top: 80px;
+}
+
+/*-----SECTION 6-----*/
+
+/* ---GUIDE DE VOYAGEURS---*/
+
+.section-6 {
+    margin-top: 80px;
+}
+
+.section-6 h3 {
+    font-size: 30px;
+    padding: 20px 0;
+    font-family: "TS-Med", sans-serif;
+}
+
+.section-6 P {
+    font-size: 20px;
+    font-family: "TS-Reg", sans-serif;
+    padding-bottom: 10px;
+}
+
+/*-----BLOC PHOTOS & TEXT----*/
+
+.guides {
+    display: grid;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*border: 1px solid red;*/
+    gap: 20px;
+}
+
+.box {
+    /*border: 2px solid blue;*/
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.box img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.box h5 {
+    font-size: 18px;
+    color: rgb(120, 47, 120);
+    padding-left: 5px;
+    font-family: "TS-Med", sans-serif;
+}
+
+.box p {
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.box span {
+    color: var(--dark-pink);
+    padding-left: 5px;
+}
+
+/*-----FOOTER----*/
+
+footer {
+    height: 150px;
+    background: var(--x-light-pink);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    height: 40px;
+    border-radius: 50px;
+}
+
+footer p {
+    padding-left: 10px;
+    font-size: 14px;
+    padding-top: 30;
+}
+
+footer a {
+    font-family: "TS-Med", sans-serif;
+}
+
+
+@media (max-width:1180px) {
+
+    /* -----SECTION 1 NAVIGATION----*/
+
+    .nav-bar {
+        padding-bottom: 70px;
+    }
+
+    .nav-bar ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav-bar ul li {
+        height: 65px;
+        width: 100%;
+    }
+
+    /*------BLOC PHOTOS SECTION 2---*/
+
+    .bloc-pics {
+        display: grid;
+        grid-template-columns: 63% 37%;
+        grid-gap: 3px;
+    }
+
+    .pic-left {
+        width: 100%;
+        height: 370px;
+        background-size: cover;
+    }
+
+    .pic-right {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        height: 367px;
+    }
+
+    .left-list {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /*---HEADER---*/
+
+    header nav span {
+        display: none;
+    }
+
+    /*-----BLOC PHOTOS SECTION 2-----*/
+
+    .bloc-pics {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-gap: 3px;
+    }
+
+    .pic-left {
+        width: 100%;
+        height: 276px;
+        background-size: cover;
+    }
+
+    .pic-right {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        height: 273px;
+    }
+
+    .left-list {
+        margin-top: -140px;
+    }
+
+    /*---SECTION 3---*/
+
+    .section-3 {
+        display: inline;
+    }
+
+    .left-side {
+        padding-bottom: 60px;
+        margin-top: 40px;
+    }
+
+    .left-side p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .right-side {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 80px;
+    }
+
+    .centre-right {
+        height: 280px;
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+
+    .map-photo {
+        height: 280px;
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
+    }
+
+    .text-right span {
+        padding-top: 10px;
+        display: inline-block;
+    }
+
+    /*------SECTION 4 CARROUSEL*/
+
+    .carrousel-photo>div {
+        width: calc((115% - 30px) / 3);
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .text-car h5 {
+        padding: 0;
+        font-size: 18px;
+        font-family: "TS-Med", sans-serif;
+    }
+
+    .text-car p {
+        padding-top: 0px;
+        font-size: 14px;
+        font-family: "TS-Reg", sans-serif;
+    }
+
+    .text-car i {
+        background: green;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .text-car span {
+        padding-left: 10px;
+    }
+
+    /*----SECTION 6 -----*/
+    .box {
+        /*border: 2px solid blue;*/
+        display: grid;
+        grid-template-rows: 75% 25%;
+    }
+
+    .guides {
+        height: 100%;
+    }
+
+    .box p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:770px) {
+
+    /*----HEADER---*/
+
+    header {
+        height: 60px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    header nav li:not(:last-child) {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .nav-logo img {
+        height: 28px;
+    }
+
+    header ul span:nth-child(5) {
+        display: inline;
+    }
+
+    header span:nth-child(1) {
+        display: inline;
+    }
+
+    /*----SECTION 1---*/
+
+    .text h1 {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .text p {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+    .left-list {
+        display: none;
+    }
+
+    /*-----NAVIGATION SECTION 1---*/
+
+    .nav-bar {
+        flex: 1;
+        margin-bottom: -50px;
+    }
+
+    .nav-bar ul {
+        flex: 3;
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-bar ul li {
+        flex-shrink: 0;
+        padding: 10px;
+        flex-basis: calc(20% - 10px);
+    }
+
+    .nav-bar span {
+        font-size: 13px;
+    }
+
+    .nav-bar i {
+        padding-left: 20px;
+    }
+
+    /*-----BLOC PHOTOS SECTION 2----*/
+
+    .section-2 {
+        padding: 0;
+    }
+
+    .pic-right {
+        display: none;
+    }
+
+    .bloc-pics {
+        display: block;
+    }
+
+    .pic-left {
+        height: 276px;
+        background-size: cover;
+    }
+
+    /*---SECTION 3---*/
+
+    .left-side {
+        margin-top: -110px;
+    }
+
+    .right-side {
+        display: inline;
+        height: 430px;
+    }
+
+    .centre-right {
+        height: 240px;
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+    }
+
+    .map-photo {
+        height: 187px;
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        margin-bottom: 80px;
+    }
+
+    .text-right p {
+        font-size: 16px;
+    }
+
+    /*---section 4---*/
+
+    .section-4 h3 {
+        font-size: 26px;
+    }
+
+    .carrousel {
+        display: block;
+    }
+
+    .carrousel-text h4 {
+        font-size: 22px;
+    }
+
+    .carrousel-photo {
+        margin-top: 40px;
+    }
+
+    .carrousel-photo>div {
+        width: calc((200% - 30px) / 3);
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .text-car h5 {
+        padding: 0;
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+
+    .text-car p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .text-car i {
+        font-size: 12px;
+    }
+
+    /*-----SECTION 6-----*/
+
+    .guides {
+        flex: 3;
+        display: flex;
+        gap: 16px;
+        overflow-x: scroll;
+        margin-top: 10px;
+    }
+
+    .box {
+        width: calc((200% - 30px) / 3);
+        flex-shrink: 0;
+    }
+
+    .article-box {
+        padding-top: 5px;
+    }
+
+    /*-----FOOTER----*/
+
+    footer {
+        padding-top: -10px;
+    }
+}
+
+@media (max-width:547px) {
+    .text-right h3 {
+        padding-top: 10px;
+    }
+
+    .centre-right {
+        height: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .centre-right {
+        height: 300px;
+    }
+}
